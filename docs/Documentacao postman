@@ -1,0 +1,36 @@
+Exemplos de Requisições
+Registro de Usuário
+Método: POST
+URL: /api/register
+Body:
+{
+  "username": "usuario_teste",
+  "password": "senha123"
+}
+________________________________________
+Login
+Método: POST
+URL: /api/login
+Body:
+{
+  "username": "usuario_teste",
+  "password": "senha123"
+}
+Resposta:
+{
+  "token": "seu_token_jwt_aqui"
+}
+________________________________________
+Criação de Evento
+Método: POST
+URL: /api/events/create
+Headers:
+Authorization: Bearer seu_token_jwt_aqui
+Body:
+{
+  "title": "Workshop de Node.js",
+  "description": "Aprenda a criar APIs com Node.js",
+  "event_date": "2024-12-01",
+  "location": "São Paulo"
+}
+________________________________________
